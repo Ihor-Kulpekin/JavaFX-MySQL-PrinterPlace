@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.requestControllers.RequestGreaterThanMiddleController">
+   <children>
+      <Label layoutX="24.0" layoutY="27.0" text="Запит &quot;Ціна послуги більше ніж середня&quot;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablePriceGreaterThanMiddle" layoutX="24.0" layoutY="208.0" prefHeight="200.0" prefWidth="243.0">
+        <columns>
+          <TableColumn fx:id="colNameService" prefWidth="70.0" text="Категорія" />
+          <TableColumn fx:id="colKindService" prefWidth="98.0" text="Вид послуги" />
+            <TableColumn fx:id="colPrice" prefWidth="72.0" text="Ціна послуги" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="boxNameService" layoutX="24.0" layoutY="71.0" prefWidth="150.0" />
+      <Button fx:id="buttonGetServices" layoutX="198.0" layoutY="71.0" mnemonicParsing="false" onAction="#getAllNameService" text="Отримати всі категорії" />
+      <Button fx:id="buttonDoRequest" layoutX="95.0" layoutY="423.0" mnemonicParsing="false" onAction="#doRequest" text="Виконати запит" />
+      <TableView fx:id="tableMiddlePriceGood" layoutX="433.0" layoutY="208.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="colServiceName" prefWidth="75.0" text="Назва товару" />
+          <TableColumn fx:id="colMiddlePriceGood" prefWidth="100.0" text="Середня ціна по товару" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonGetMiddlePriceGood" layoutX="460.0" layoutY="423.0" mnemonicParsing="false" onAction="#doRequestMiddlePrice" text="отримати середню ціну" />
+   </children>
+</AnchorPane>

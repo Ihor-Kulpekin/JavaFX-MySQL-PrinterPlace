@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.showDataFromDbControllers.deleteDataFromTableControllers.DeleteDataOrderingController">
+   <children>
+      <TextField fx:id="textField" layoutX="151.0" layoutY="99.0" />
+      <Label layoutX="38.0" layoutY="103.0" text="Код замовлення" />
+      <Button fx:id="buttonDeleteData" onAction="#clickButtonDeleteData" layoutX="166.0" layoutY="294.0" mnemonicParsing="false" text="Видалити дані по коду">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="523.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.requestControllers.RequestPopularityGoodsController">
+   <children>
+      <TableView fx:id="tableView" layoutX="288.0" layoutY="133.0" prefHeight="200.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="colKindService" prefWidth="89.0" text="Вид послуги" />
+          <TableColumn fx:id="colNumberOrdering" prefWidth="136.0" text="Кількість замовлень" />
+        </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="30.0" text="Запит &quot;Популярність товару&quot;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonDoRequest" onAction="#doRequest" layoutX="351.0" layoutY="361.0" mnemonicParsing="false" text="виконати запит" />
+   </children>
+</AnchorPane>

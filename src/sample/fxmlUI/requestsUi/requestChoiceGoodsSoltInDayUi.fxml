@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.requestControllers.RequestChoiceGoodsSoltInOneDayController">
+   <children>
+      <Label layoutX="26.0" layoutY="37.0" text="Запит &quot;Куплено товарів за обраний день&quot;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="324.0" layoutY="104.0" prefHeight="200.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="colKindService" prefWidth="86.0" text="Вид послуги" />
+          <TableColumn fx:id="colDateOrdering" prefWidth="101.0" text="Дата продажу" />
+            <TableColumn fx:id="colNumberOrdering" prefWidth="92.0" text="Кількість" />
+            <TableColumn fx:id="colSumOrdering" prefWidth="93.0" text="На Суму" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="boxDateOrdering" layoutX="14.0" layoutY="104.0" prefWidth="150.0" />
+      <Button fx:id="getDateOrdering" onAction="#getDateOrdering" layoutX="200.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Отримати дату " />
+      <Label layoutX="28.0" layoutY="79.0" text="Оберіть дату продажу" />
+      <Button fx:id="doRequest" onAction="#doRequest" layoutX="460.0" layoutY="333.0" mnemonicParsing="false" text="Виконати запит" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.addDataToDbControllers.AddWorkerController">
+   <children>
+      <Pane prefHeight="412.0" prefWidth="627.0">
+         <children>
+            <Label prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" text="Додати робітника">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="63.0" text="Ім'я працівника">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="97.0" text="Прізвище працівника">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="139.0" text="Посада">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameWorker" layoutX="281.0" layoutY="68.0" />
+            <TextField fx:id="lastNameWorker" layoutX="281.0" layoutY="102.0" />
+            <TextField fx:id="position" layoutX="281.0" layoutY="144.0" />
+            <Button fx:id="addWorkerBtn" onAction="#addWorker" layoutX="339.0" layoutY="194.0" mnemonicParsing="false" text="Додати запис" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

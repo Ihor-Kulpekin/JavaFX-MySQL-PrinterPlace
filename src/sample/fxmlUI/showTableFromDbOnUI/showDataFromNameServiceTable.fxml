@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.showDataFromDbControllers.ShowDataFromNameServiceTableController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" text="Таблиця Найменування">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableNameService" layoutX="24.0" layoutY="88.0" prefHeight="194.0" prefWidth="347.0">
+        <columns>
+          <TableColumn fx:id="id_Name_Service" prefWidth="108.0" text="Id_Найменування" />
+          <TableColumn fx:id="nameService" prefWidth="78.00001525878906" text="Id_Послуга" />
+            <TableColumn fx:id="kind_Service" prefWidth="82.0" text="Вид послуги" />
+            <TableColumn fx:id="priceService" prefWidth="78.0" text="Ціна/грн" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonShowTable" layoutX="24.0" layoutY="55.0" mnemonicParsing="false" onAction="#showTableNameService" text="Відобразити таблицю" />
+      <Button fx:id="buttonDeleteData" layoutX="168.0" layoutY="55.0" mnemonicParsing="false" onAction="#clickButtonDeleteData" text="Видалити дані" />
+      <Button fx:id="buttonUpdateData" layoutX="275.0" layoutY="55.0" mnemonicParsing="false" onAction="#showNameServiceDetails" text="Обновити дані" />
+      <ComboBox fx:id="boxChoiceNameService" layoutX="390.0" layoutY="55.0" prefWidth="150.0" />
+      <Button fx:id="buttonGetNameService" layoutX="565.0" layoutY="55.0" mnemonicParsing="false" onAction="#clickButtonGetNameService" text="Отримати вид послуги" />
+      <Label layoutX="367.0" layoutY="23.0" text="Оберіть вид послуги для видалення" />
+   </children>
+</AnchorPane>

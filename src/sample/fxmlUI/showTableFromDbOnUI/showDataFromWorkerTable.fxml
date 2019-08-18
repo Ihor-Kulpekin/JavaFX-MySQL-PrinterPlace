@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="539.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.showDataFromDbControllers.ShowDataFromWorkerTableController">
+   <children>
+      <Label layoutX="43.0" layoutY="22.0" text="Таблиця Працівників">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="43.0" layoutY="84.0" prefHeight="423.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="id_Worker" prefWidth="75.0" text="id_Worker" />
+          <TableColumn fx:id="Name_Worker" prefWidth="122.0" text="Name_Worker" />
+            <TableColumn fx:id="Last_Name_Worker" prefWidth="126.0" text="Last_Name_Worker" />
+            <TableColumn fx:id="Position" minWidth="0.0" prefWidth="92.0" text="Position" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonUpdateTable" layoutX="564.0" layoutY="84.0" mnemonicParsing="false" onAction="#showWorkerTable" text="Відобразити таблицю" />
+      <Button fx:id="buttonOpenWindowChanging" layoutX="567.0" layoutY="187.0" mnemonicParsing="false" onAction="#openWindowChanging" text="Відкрити вікно зміни" />
+      <Button fx:id="buttonOpenWindowDeletingData" onAction="#clickButton" layoutX="535.0" layoutY="306.0" mnemonicParsing="false" text="Відкрити вікно видалення даних" />
+   </children>
+</AnchorPane>

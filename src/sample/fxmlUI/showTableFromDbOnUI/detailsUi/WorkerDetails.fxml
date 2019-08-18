@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="409.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.showDataFromDbControllers.details.WorkerDetails">
+   <children>
+      <TextField fx:id="firstNameWorker" layoutX="170.0" layoutY="80.0" />
+      <TextField fx:id="lastNameWorker" layoutX="170.0" layoutY="131.0" />
+      <TextField fx:id="positionWorker" layoutX="170.0" layoutY="192.0" />
+      <Label layoutX="22.0" layoutY="84.0" text="Імя працівника" />
+      <Label layoutX="22.0" layoutY="135.0" text="Призвіще працівника" />
+      <Label layoutX="22.0" layoutY="196.0" text="Посада" />
+      <ComboBox fx:id="boxIdWorker" layoutX="402.0" layoutY="80.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="410.0" layoutY="49.0" text="Оберіть id працівника для зміни" />
+      <Button fx:id="buttonChangeData" onAction="#clickButtonChangeData" layoutX="276.0" layoutY="316.0" mnemonicParsing="false" text="Змінити дані">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonGetIdWorker" onAction="#clickGetIdWorker" layoutX="619.0" layoutY="80.0" mnemonicParsing="false" text="отримати id" />
+   </children>
+</AnchorPane>

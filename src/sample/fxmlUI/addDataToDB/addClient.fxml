@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.addDataToDbControllers.AddClientController">
+   <children>
+      <Pane prefHeight="404.0" prefWidth="606.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" text="Додати Замовника">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="58.0" text="Ім'я">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="89.0" text="Прізвище">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="126.0" text="Код_Замовника">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="162.0" text="Мобільний номер">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="200.0" text="Електрона пошта">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameClient" layoutX="240.0" layoutY="63.0" />
+            <TextField fx:id="lastNameClient" layoutX="240.0" layoutY="94.0" />
+            <TextField fx:id="codeClient" layoutX="240.0" layoutY="131.0" />
+            <TextField fx:id="mobileNumberClient" layoutX="240.0" layoutY="167.0" />
+            <TextField fx:id="emailClient" layoutX="240.0" layoutY="205.0" />
+            <Button fx:id="addClient" onAction="#addClient" layoutX="300.0" layoutY="258.0" mnemonicParsing="false" text="Додати запис" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

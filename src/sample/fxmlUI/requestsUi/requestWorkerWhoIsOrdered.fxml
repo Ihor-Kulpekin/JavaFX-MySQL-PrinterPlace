@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.requestControllers.RequestWorkerWhoIsOrderedController">
+   <children>
+      <TableView fx:id="tableView" layoutX="217.0" layoutY="101.0" prefHeight="61.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="firstName" prefWidth="109.0" text="Ім'я працівника" />
+          <TableColumn fx:id="lastName" prefWidth="147.0" text="Прізвище працівника" />
+            <TableColumn fx:id="obsluzhivClients" prefWidth="139.0" text="Обслужив замовників" />
+            <TableColumn fx:id="generalSumAllOrdering" prefWidth="195.0" text="Сума грошей всіх замовлень" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonDoRequest" onAction="#doRequest" layoutX="431.0" layoutY="206.0" mnemonicParsing="false" text="Виконати запит" />
+      <Label layoutX="25.0" layoutY="32.0" text="Запит &quot;Працівник, що обслужив&quot;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="allWorkers" layoutX="25.0" layoutY="101.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="76.0" text="id Працівника" />
+      <Button fx:id="buttonGetWorkers" layoutX="24.0" layoutY="206.0" mnemonicParsing="false" text="Отримати id працівників" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.reportControllers.ReportBillController">
+   <children>
+      <ComboBox fx:id="boxCodeOrdering" layoutX="31.0" layoutY="34.0" prefWidth="150.0" />
+      <Label layoutX="31.0" layoutY="14.0" text="Код замовника" />
+      <Button fx:id="buttonGetCodeOrdering" layoutX="215.0" layoutY="34.0" mnemonicParsing="false" onAction="#clickButtonGetCodeOrdering" text="Отримати замовника" />
+      <Label layoutX="294.0" layoutY="89.0" text="Чек">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="178.0" layoutY="139.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="403.0" prefWidth="291.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="243.0" layoutY="38.0" text="Імя:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="labelNameClient" layoutX="100.0" layoutY="38.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="78.0" text="Прізвище:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelLastNameClient" layoutX="99.0" layoutY="78.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="148.0" layoutY="123.0" text="Список товару:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" layoutX="21.0" layoutY="132.0" prefHeight="118.0" prefWidth="118.0">
+              <columns>
+                <TableColumn fx:id="colGood" prefWidth="115.0" text="товар" />
+              </columns>
+            </TableView>
+            <Label layoutX="229.0" layoutY="344.0" text="Сума:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelGeneralSum" layoutX="105.0" layoutY="346.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="205.0" layoutY="266.0" text="Ціна/шт:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelPrice" layoutX="102.0" layoutY="271.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="271.0" text="грн" />
+            <Label layoutX="202.0" layoutY="308.0" text="Кількість:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNumberGoods" layoutX="105.0" layoutY="313.0" text="250">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="317.0" text="шт" />
+         </children></Pane>
+      <Button fx:id="buttonMakeReport" layoutX="397.0" layoutY="34.0" mnemonicParsing="false" onAction="#clickButtonMakeReport" text="Сформувати звіт" />
+   </children>
+</AnchorPane>

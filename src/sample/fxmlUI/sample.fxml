@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="mainPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="561.0" prefWidth="721.0">
+         <children>
+            <Label layoutX="126.0" layoutY="62.0" text="Форми">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="487.0" layoutY="62.0" text="Таблиці">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonShowService" layoutX="437.0" layoutY="94.0" mnemonicParsing="false" onAction="#buttonShowDataFromDb" prefHeight="25.0" prefWidth="179.0" text="Таблиця &quot;Послуга&quot;" />
+            <Button fx:id="buttonShowClient" layoutX="437.0" layoutY="119.0" mnemonicParsing="false" onAction="#buttonShowDataFromDbClient" prefHeight="25.0" prefWidth="179.0" text="Таблиця &quot;Замовник&quot;" />
+            <Button fx:id="buttonShowNameService" layoutX="437.0" layoutY="144.0" mnemonicParsing="false" onAction="#buttonShowNameService" prefHeight="25.0" prefWidth="179.0" text="Таблиця &quot;Найменування&quot;" />
+            <Button fx:id="buttonShowOrdering" layoutX="437.0" layoutY="169.0" mnemonicParsing="false" onAction="#buttonShowOrdering" prefHeight="25.0" prefWidth="179.0" text="Таблиця &quot;Замовлення&quot;" />
+            <Button fx:id="buttonShowWorker" layoutX="437.0" layoutY="194.0" mnemonicParsing="false" onAction="#buttonsShowDataFromDbWorker" prefHeight="25.0" prefWidth="179.0" text="Таблиця &quot;Працівник&quot;" />
+            <Label layoutX="31.0" layoutY="14.0" text="Головна Форма">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <VBox layoutX="58.0" layoutY="94.0" prefHeight="130.0" prefWidth="206.0">
+               <children>
+                  <Button fx:id="buttonAddPosluga" mnemonicParsing="false" onAction="#clickButtonAddPosluga" prefHeight="25.0" prefWidth="204.0" text="Форма додавання послуг" />
+                  <Button fx:id="buttonAddClient" mnemonicParsing="false" onAction="#clickButtonAddClient" prefHeight="25.0" prefWidth="204.0" text="Форма додавання замовників" />
+                  <Button fx:id="buttonAddNameService" mnemonicParsing="false" onAction="#clickButtonAddNameService" prefHeight="25.0" prefWidth="204.0" text="Форма додавання найменування" />
+                  <Button fx:id="buttonAddOrdering" mnemonicParsing="false" onAction="#clickButtonAddOrdering" prefHeight="25.0" prefWidth="204.0" text="Форма додавання замовлень" />
+                  <Button fx:id="buttonAddWorker" mnemonicParsing="false" onAction="#clickButtonAddWorker" prefHeight="25.0" prefWidth="204.0" text="Форма додавання працівників" />
+               </children>
+            </VBox>
+            <Label layoutX="124.0" layoutY="273.0" text="Запити">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonDoRequestClientBuy" layoutX="20.0" layoutY="307.0" mnemonicParsing="false" onAction="#doRequestClinetBuy" prefHeight="25.0" prefWidth="283.0" text="Замовник що купив" />
+            <Button fx:id="buttonTheMostExpensiveOrder" layoutX="20.0" layoutY="332.0" mnemonicParsing="false" onAction="#openFormRequestTheMostExpensiveOrder" prefHeight="25.0" prefWidth="283.0" text="Найдорожче замовлення" />
+            <Button fx:id="button" layoutX="20.0" layoutY="357.0" mnemonicParsing="false" onAction="#openFormRequestWorkerWhoIsWorked" prefHeight="25.0" prefWidth="283.0" text="Працівник, що обслужив" />
+            <Button fx:id="buttonAvgOrderedGood" layoutX="20.0" layoutY="382.0" mnemonicParsing="false" onAction="#openFormRequestAvgNumberOrderedGood" prefHeight="25.0" prefWidth="283.0" text="Cередня кількість замовлення обраного товару" />
+            <Button fx:id="buttonPriceGreaterThanMiddle" layoutX="20.0" layoutY="407.0" mnemonicParsing="false" onAction="#openFormRequestPriceGreaterThanMiddle" prefHeight="25.0" prefWidth="283.0" text="Ціна товару більше за середню" />
+            <Button fx:id="buttonPopularityGoods" layoutX="20.0" layoutY="432.0" mnemonicParsing="false" onAction="#openFormPopularityGoods" prefHeight="25.0" prefWidth="283.0" text="Популярність товарів" />
+            <Button fx:id="buttonOpenFormRequest" layoutX="20.0" layoutY="457.0" mnemonicParsing="false" onAction="#openFormRequest" prefHeight="25.0" prefWidth="283.0" text="Продано товару за обраний день" />
+            <Button fx:id="buttonOpenFormRequestGood" layoutX="20.0" layoutY="482.0" mnemonicParsing="false" onAction="#openFormRequestAboutGood" prefHeight="25.0" prefWidth="283.0" text="Продано обраний товар за весь час" />
+            <Label layoutX="500.0" layoutY="273.0" text="Звіти">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonOpenReportBill" layoutX="456.0" layoutY="307.0" mnemonicParsing="false" onAction="#openFormReportBill" prefHeight="25.0" prefWidth="142.0" text="Звіт чек" />
+            <Button fx:id="buttonOpenReportWorker" layoutX="456.0" layoutY="332.0" mnemonicParsing="false" onAction="#openFormReportWorker" prefHeight="25.0" prefWidth="142.0" text="Звіт по працівникам" />
+            <Button fx:id="buttonReportAllTime" onAction="#clickButtonReportAllTime" layoutX="456.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="Звіт за весь час" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
