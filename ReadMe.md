@@ -1,13 +1,15 @@
-Database "Printer Place"
+## Database "Printer Place"
 
 A small desktop application for crud operation with database tables.
 
-Developer
+## Developer
 IHOR KULPEKIN
 
-Technologies
+## Technologies
 Programming language: Java;
+
 Database: SQL, JDBC, MySQL;
+
 Integrated Development Environment: IntelliJ IDEA;
 
 
