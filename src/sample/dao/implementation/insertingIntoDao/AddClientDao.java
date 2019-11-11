@@ -46,7 +46,11 @@ public class AddClientDao implements ClientInterface {
 
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            try {
+                connection.close();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
         }
 
 

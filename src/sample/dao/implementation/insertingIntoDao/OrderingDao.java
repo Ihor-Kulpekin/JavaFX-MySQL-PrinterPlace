@@ -24,7 +24,7 @@ public class OrderingDao implements OrderingInterface {
         String nameKindService = ordering.getNameKindService();
 
 
-        Connection connection;
+        Connection connection = null;
 
         try {
             connection = DatabaseConnectionImpl.createStaticConnection();
@@ -46,7 +46,13 @@ public class OrderingDao implements OrderingInterface {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            try {
+                if(!connection.isClosed()){
+                    connection.close();
+                }
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
         }
 
 

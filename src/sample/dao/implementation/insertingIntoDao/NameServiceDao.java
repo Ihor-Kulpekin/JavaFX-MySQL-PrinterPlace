@@ -38,7 +38,11 @@ public class NameServiceDao implements NameServiceInterface {
 
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            try {
+                connection.close();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
         }
 
         return "Invalid data";
